@@ -1,0 +1,1647 @@
+<bpy>
+  <Theme>
+    <user_interface>
+      <ThemeUserInterface
+        menu_shadow_fac="0.4"
+        menu_shadow_width="5"
+        icon_alpha="1"
+        icon_saturation="1"
+        widget_emboss="#00000000"
+        editor_outline="#{{ crust.hex }}"
+        widget_text_cursor="#{{ mauve.hex }}"
+        panel_roundness="0.8"
+        transparent_checker_primary="#{{ surface0.hex }}"
+        transparent_checker_secondary="#{{ surface1.hex }}"
+        transparent_checker_size="8"
+        axis_x="#{{ red.hex }}"
+        axis_y="#{{ green.hex }}"
+        axis_z="#{{ lavender.hex }}"
+        gizmo_hi="#ffffff"
+        gizmo_primary="#{{ yellow.hex }}"
+        gizmo_secondary="#{{ sky.hex }}"
+        gizmo_view_align="#{{ overlay0.hex }}"
+        gizmo_a="#{{ maroon.hex }}"
+        gizmo_b="#{{ teal.hex }}"
+        icon_scene="#{{ text.hex }}ff"
+        icon_collection="#{{ text.hex }}ff"
+        icon_object="#{{ peach.hex }}ff"
+        icon_object_data="#{{ green.hex }}ff"
+        icon_modifier="#{{ lavender.hex }}ff"
+        icon_shading="#{{ maroon.hex }}ff"
+        icon_folder="#{{ yellow.hex }}ff"
+        icon_border_intensity="0"
+        >
+        <wcol_regular>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_regular>
+        <wcol_tool>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_tool>
+        <wcol_toolbar_item>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_toolbar_item>
+        <wcol_radio>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_radio>
+        <wcol_text>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ surface1.hex }}ff"
+            item="#{{ mauve.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_text>
+        <wcol_option>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ base.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="1"
+            >
+          </ThemeWidgetColors>
+        </wcol_option>
+        <wcol_toggle>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_toggle>
+        <wcol_num>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ surface0.hex }}ff"
+            item="#{{ mauve.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_num>
+        <wcol_numslider>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ surface1.hex }}ff"
+            item="#{{ mauve.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_numslider>
+        <wcol_box>
+          <ThemeWidgetColors
+            outline="#{{ overlay2.hex }}"
+            inner="#{{ surface0.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_box>
+        <wcol_menu>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_menu>
+        <wcol_pulldown>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_pulldown>
+        <wcol_menu_back>
+          <ThemeWidgetColors
+            outline="#{{ overlay2.hex }}"
+            inner="#{{ surface0.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="1"
+            >
+          </ThemeWidgetColors>
+        </wcol_menu_back>
+        <wcol_pie_menu>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#65527bff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_pie_menu>
+        <wcol_tooltip>
+          <ThemeWidgetColors
+            outline="#{{ text.hex }}"
+            inner="#{{ text.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ base.hex }}ff"
+            text="#{{ base.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_tooltip>
+        <wcol_menu_item>
+          <ThemeWidgetColors
+            outline="#{{ surface0.hex }}"
+            inner="#{{ surface0.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ base.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_menu_item>
+        <wcol_scroll>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ surface1.hex }}ff"
+            item="#{{ overlay2.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="1"
+            >
+          </ThemeWidgetColors>
+        </wcol_scroll>
+        <wcol_progress>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ mauve.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_progress>
+        <wcol_list_item>
+          <ThemeWidgetColors
+            outline="#{{ surface0.hex }}"
+            inner="#{{ surface0.hex }}ff"
+            inner_sel="#{{ crust.hex }}ff"
+            item="#{{ mauve.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_list_item>
+        <wcol_view_item>
+          <ThemeWidgetColors
+            outline="#{{ surface1.hex }}"
+            inner="#{{ surface1.hex }}ff"
+            inner_sel="#{{ mauve.hex }}ff"
+            item="#{{ surface2.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_view_item>
+        <wcol_state>
+          <ThemeWidgetStateColors
+            inner_anim="#519542"
+            inner_anim_sel="#{{ green.hex }}"
+            inner_key="#c97f19"
+            inner_key_sel="#{{ yellow.hex }}"
+            inner_driven="#7746b7"
+            inner_driven_sel="#{{ mauve.hex }}"
+            inner_overridden="#51bac0"
+            inner_overridden_sel="#{{ teal.hex }}"
+            inner_changed="#c8510c"
+            inner_changed_sel="#{{ peach.hex }}"
+            blend="0.5"
+            >
+          </ThemeWidgetStateColors>
+        </wcol_state>
+        <wcol_tab>
+          <ThemeWidgetColors
+            outline="#{{ crust.hex }}"
+            inner="#{{ crust.hex }}ff"
+            inner_sel="#{{ surface2.hex }}ff"
+            item="#{{ text.hex }}ff"
+            text="#{{ text.hex }}"
+            text_sel="#{{ text.hex }}"
+            show_shaded="FALSE"
+            shadetop="0"
+            shadedown="0"
+            roundness="0.8"
+            >
+          </ThemeWidgetColors>
+        </wcol_tab>
+      </ThemeUserInterface>
+    </user_interface>
+    <view_3d>
+      <ThemeView3D
+        grid="#{{ surface0.hex }}80"
+        clipping_border_3d="#3f3f3fff"
+        wire="#b7b7ff"
+        wire_edit="#000000"
+        edge_width="1"
+        gp_vertex="#b7b7ff"
+        gp_vertex_select="#{{ mauve.hex }}"
+        gp_vertex_size="3"
+        text_grease_pencil="#b5e61d"
+        object_selected="#65527b"
+        object_active="#{{ mauve.hex }}"
+        text_keyframe="#ddd700"
+        camera="#{{ text.hex }}"
+        empty="#{{ text.hex }}"
+        light="#{{ text.hex }}50"
+        speaker="#{{ text.hex }}"
+        vertex="#{{ text.hex }}"
+        vertex_select="#{{ mauve.hex }}"
+        vertex_active="#000000"
+        vertex_size="3"
+        vertex_bevel="#00a5ff"
+        vertex_unreferenced="#000000"
+        edge_select="#{{ mauve.hex }}"
+        edge_seam="#db2512"
+        edge_sharp="#00ffff"
+        edge_crease="#cc0099"
+        edge_bevel="#00a5ff"
+        edge_facesel="#4b4b4b"
+        freestyle_edge_mark="#7fff7f"
+        face="#ffffff02"
+        face_select="#{{ mauve.hex }}2e"
+        face_dot="#{{ mauve.hex }}"
+        facedot_size="3"
+        freestyle_face_mark="#7fff7f4d"
+        face_retopology="#50c8ff0f"
+        face_back="#ff0000b3"
+        face_front="#0000ffb3"
+        nurb_uline="#909000"
+        nurb_vline="#803060"
+        nurb_sel_uline="#f0ff40"
+        nurb_sel_vline="#f090a0"
+        act_spline="#db2512"
+        handle_free="#000000"
+        handle_auto="#909000"
+        handle_vect="#409030"
+        handle_sel_vect="#40c030"
+        handle_align="#803060"
+        handle_sel_free="#000000"
+        handle_sel_auto="#f0ff40"
+        handle_sel_align="#f090a0"
+        lastsel_point="#ffffff"
+        extra_edge_len="#150806"
+        extra_edge_angle="#4d4d00"
+        extra_face_angle="#0000cc"
+        extra_face_area="#004d00"
+        editmesh_active="#{{ text.hex }}33"
+        normal="#22dddd"
+        vertex_normal="#2361dd"
+        split_normal="#dd23dd"
+        bone_pose="#50c8ff"
+        bone_pose_active="#8cffff"
+        bone_solid="#b2b2b2"
+        bone_locked_weight="#ff000080"
+        bundle_solid="#c8c8c8"
+        camera_path="#000000"
+        camera_passepartout="#000000"
+        skin_root="#b44d4d"
+        view_overlay="#000000"
+        transform="#ffffff"
+        frame_current="#4772b3"
+        paint_curve_handle="#7fff7f7f"
+        paint_curve_pivot="#ff7f7f7f"
+        outline_width="1"
+        object_origin_size="6"
+        >
+        <space>
+          <ThemeSpaceGradient
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ crust.hex }}00"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ crust.hex }}00"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <gradients>
+              <ThemeGradientColors
+                background_type="RADIAL"
+                high_gradient="#{{ base.hex }}"
+                gradient="#{{ mantle.hex }}"
+                >
+              </ThemeGradientColors>
+            </gradients>
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGradient>
+        </space>
+      </ThemeView3D>
+    </view_3d>
+    <graph_editor>
+      <ThemeGraphEditor
+        grid="#{{ surface1.hex }}"
+        frame_current="#{{ blue.hex }}"
+        time_scrub_background="#{{ crust.hex }}ff"
+        time_marker_line="#{{ text.hex }}ff"
+        time_marker_line_selected="#{{ mauve.hex }}ff"
+        window_sliders="#969696"
+        channels_region="#{{ surface1.hex }}"
+        dopesheet_channel="#{{ surface1.hex }}"
+        dopesheet_subchannel="#{{ surface1.hex }}"
+        channel_group="#{{ surface1.hex }}"
+        active_channels_group="#{{ surface1.hex }}"
+        preview_range="#a14d0066"
+        vertex="#ffffff"
+        vertex_select="#65527b"
+        vertex_active="#{{ mauve.hex }}"
+        vertex_size="6"
+        vertex_bevel="#ffffff"
+        vertex_unreferenced="#ffffff"
+        handle_free="#ffffff"
+        handle_auto="#909000"
+        handle_vect="#409030"
+        handle_sel_vect="#40c030"
+        handle_align="#803060"
+        handle_sel_free="#ffffff"
+        handle_sel_auto="#f0ff40"
+        handle_sel_align="#f090a0"
+        handle_auto_clamped="#994030"
+        handle_sel_auto_clamped="#f0af90"
+        lastsel_point="#ffffff"
+        handle_vertex="#ffffff"
+        handle_vertex_select="#{{ mauve.hex }}"
+        handle_vertex_size="5"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+        <space_list>
+          <ThemeSpaceListGeneric
+            list="#{{ base.hex }}"
+            list_title="#{{ text.hex }}"
+            list_text="#{{ text.hex }}"
+            list_text_hi="#{{ mauve.hex }}"
+            >
+          </ThemeSpaceListGeneric>
+        </space_list>
+      </ThemeGraphEditor>
+    </graph_editor>
+    <file_browser>
+      <ThemeFileBrowser
+        selected_file="#{{ mauve.hex }}"
+        row_alternate="#{{ surface0.hex }}45"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeFileBrowser>
+    </file_browser>
+    <nla_editor>
+      <ThemeNLAEditor
+        grid="#{{ surface1.hex }}"
+        view_sliders="#969696"
+        dopesheet_channel="#{{ surface1.hex }}"
+        nla_track="#{{ surface1.hex }}"
+        active_action="#{{ surface1.hex }}66"
+        active_action_unset="#{{ surface1.hex }}4d"
+        preview_range="#a14d0066"
+        strips="#0d0d0d"
+        strips_selected="#{{ mauve.hex }}"
+        transition_strips="#1c2630"
+        transition_strips_selected="#2e75db"
+        meta_strips="#332642"
+        meta_strips_selected="#692196"
+        sound_strips="#2b3d3d"
+        sound_strips_selected="#1f7a7a"
+        tweak="#4df31a"
+        tweak_duplicate="#d90000"
+        keyframe_border="#000000ff"
+        keyframe_border_selected="#000000ff"
+        frame_current="#{{ blue.hex }}"
+        time_scrub_background="#{{ crust.hex }}ff"
+        time_marker_line="#ffffff4d"
+        time_marker_line_selected="#ffffffb3"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+        <space_list>
+          <ThemeSpaceListGeneric
+            list="#{{ crust.hex }}"
+            list_title="#{{ text.hex }}"
+            list_text="#{{ text.hex }}"
+            list_text_hi="#{{ mauve.hex }}"
+            >
+          </ThemeSpaceListGeneric>
+        </space_list>
+      </ThemeNLAEditor>
+    </nla_editor>
+    <dopesheet_editor>
+      <ThemeDopeSheet
+        grid="#{{ surface1.hex }}"
+        frame_current="#{{ blue.hex }}"
+        time_scrub_background="#{{ crust.hex }}ff"
+        time_marker_line="#{{ text.hex }}ff"
+        time_marker_line_selected="#{{ mauve.hex }}ff"
+        value_sliders="#000000"
+        view_sliders="#c0c0c0"
+        dopesheet_channel="#{{ surface1.hex }}66"
+        dopesheet_subchannel="#{{ surface1.hex }}66"
+        channels="#{{ surface1.hex }}66"
+        channels_selected="#{{ surface1.hex }}66"
+        channel_group="#{{ surface1.hex }}66"
+        active_channels_group="#{{ surface1.hex }}67"
+        long_key="#ffffff1f"
+        long_key_selected="#{{ mauve.hex }}99"
+        keyframe="#bfbfbf"
+        keyframe_selected="#{{ mauve.hex }}"
+        keyframe_extreme="#e8b3cc"
+        keyframe_extreme_selected="#f28080"
+        keyframe_breakdown="#b3dbe8"
+        keyframe_breakdown_selected="#54bfed"
+        keyframe_jitter="#94e575"
+        keyframe_jitter_selected="#61c042"
+        keyframe_movehold="#808080"
+        keyframe_movehold_selected="#{{ mauve.hex }}"
+        keyframe_border="#000000ff"
+        keyframe_border_selected="#000000ff"
+        keyframe_scale_factor="1"
+        summary="#4d272766"
+        preview_range="#a14d0066"
+        interpolation_line="#94e575cc"
+        simulated_frames="#{{ mauve.hex }}ff"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+        <space_list>
+          <ThemeSpaceListGeneric
+            list="#{{ crust.hex }}"
+            list_title="#{{ text.hex }}"
+            list_text="#{{ text.hex }}"
+            list_text_hi="#{{ mauve.hex }}"
+            >
+          </ThemeSpaceListGeneric>
+        </space_list>
+      </ThemeDopeSheet>
+    </dopesheet_editor>
+    <image_editor>
+      <ThemeImageEditor
+        grid="#{{ surface1.hex }}ff"
+        vertex="#ffffff"
+        vertex_select="#{{ mauve.hex }}"
+        vertex_active="#000000"
+        vertex_size="3"
+        vertex_bevel="#000000"
+        vertex_unreferenced="#000000"
+        face="#ffffff0a"
+        face_select="#{{ mauve.hex }}3c"
+        face_dot="#{{ mauve.hex }}"
+        facedot_size="3"
+        freestyle_face_mark="#7fff7f33"
+        face_retopology="#00000000"
+        face_back="#00000000"
+        face_front="#00000000"
+        editmesh_active="#ffffff40"
+        wire_edit="#ffffff"
+        edge_width="1"
+        edge_select="#{{ mauve.hex }}"
+        scope_back="#727272ff"
+        preview_stitch_face="#7f7f0033"
+        preview_stitch_edge="#ff00ff33"
+        preview_stitch_vert="#0000ff33"
+        preview_stitch_stitchable="#00ff00ff"
+        preview_stitch_unstitchable="#ff0000ff"
+        preview_stitch_active="#e1d2c323"
+        uv_shadow="#707070ff"
+        frame_current="#4772b3"
+        metadatabg="#000000"
+        metadatatext="#ffffff"
+        handle_free="#000000"
+        handle_auto="#909000"
+        handle_align="#803060"
+        handle_sel_free="#000000"
+        handle_sel_auto="#f0ff40"
+        handle_sel_align="#f090a0"
+        handle_auto_clamped="#000000"
+        handle_sel_auto_clamped="#000000"
+        handle_vertex="#000000"
+        handle_vertex_select="#ffff00"
+        handle_vertex_size="5"
+        paint_curve_handle="#7fff7f7f"
+        paint_curve_pivot="#ff7f7f7f"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}00"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeImageEditor>
+    </image_editor>
+    <sequence_editor>
+      <ThemeSequenceEditor
+        grid="#{{ surface1.hex }}"
+        window_sliders="#a0a0a0"
+        movie_strip="#{{ lavender.hex }}"
+        movieclip_strip="#{{ maroon.hex }}"
+        image_strip="#{{ peach.hex }}"
+        scene_strip="#{{ yellow.hex }}"
+        audio_strip="#{{ sapphire.hex }}"
+        effect_strip="#{{ pink.hex }}"
+        color_strip="#{{ overlay1.hex }}"
+        meta_strip="#65527b"
+        mask_strip="#{{ flamingo.hex }}"
+        text_strip="#{{ text.hex }}"
+        active_strip="#{{ mauve.hex }}"
+        selected_strip="#65527b"
+        frame_current="#{{ blue.hex }}"
+        time_scrub_background="#{{ crust.hex }}ff"
+        time_marker_line="#{{ text.hex }}ff"
+        time_marker_line_selected="#{{ mauve.hex }}ff"
+        keyframe="#{{ mauve.hex }}"
+        draw_action="#50c8ff"
+        preview_back="#000000"
+        metadatabg="#000000"
+        metadatatext="#ffffff"
+        preview_range="#a14d0066"
+        row_alternate="#{{ overlay1.hex }}23"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+        <space_list>
+          <ThemeSpaceListGeneric
+            list="#{{ crust.hex }}"
+            list_title="#{{ text.hex }}"
+            list_text="#{{ text.hex }}"
+            list_text_hi="#{{ mauve.hex }}"
+            >
+          </ThemeSpaceListGeneric>
+        </space_list>
+      </ThemeSequenceEditor>
+    </sequence_editor>
+    <properties>
+      <ThemeProperties
+        match="#{{ mauve.hex }}"
+        active_modifier="#{{ mauve.hex }}ff"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ crust.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeProperties>
+    </properties>
+    <text_editor>
+      <ThemeTextEditor
+        line_numbers="#{{ text.hex }}"
+        line_numbers_background="#{{ surface1.hex }}"
+        selected_text="#2d4366"
+        cursor="#ff0000"
+        syntax_builtin="#{{ red.hex }}"
+        syntax_symbols="#{{ flamingo.hex }}"
+        syntax_special="#{{ green.hex }}"
+        syntax_preprocessor="#{{ mauve.hex }}"
+        syntax_reserved="#{{ peach.hex }}"
+        syntax_comment="#{{ overlay1.hex }}"
+        syntax_string="#{{ yellow.hex }}"
+        syntax_numbers="#{{ lavender.hex }}"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeTextEditor>
+    </text_editor>
+    <node_editor>
+      <ThemeNodeEditor
+        grid="#{{ overlay1.hex }}"
+        node_selected="#65527b"
+        node_active="#{{ mauve.hex }}"
+        wire="#{{ text.hex }}ff"
+        wire_inner="#8d8d8d"
+        wire_select="#{{ mauve.hex }}80"
+        selected_text="#{{ text.hex }}"
+        node_backdrop="#{{ surface0.hex }}ff"
+        converter_node="#{{ lavender.hex }}"
+        color_node="#{{ yellow.hex }}"
+        group_node="#{{ green.hex }}"
+        group_socket_node="#{{ text.hex }}"
+        frame_node="#{{ overlay0.hex }}56"
+        matte_node="#{{ red.hex }}"
+        distor_node="#{{ sapphire.hex }}"
+        noodle_curving="5"
+        grid_levels="1"
+        dash_alpha="0.5"
+        input_node="#{{ maroon.hex }}"
+        output_node="#{{ red.hex }}"
+        filter_node="#{{ mauve.hex }}"
+        vector_node="#{{ blue.hex }}"
+        texture_node="#{{ peach.hex }}"
+        shader_node="#{{ green.hex }}"
+        script_node="#{{ sapphire.hex }}"
+        pattern_node="#6c696f"
+        layout_node="#6c696f"
+        geometry_node="#{{ green.hex }}"
+        attribute_node="#{{ blue.hex }}"
+        simulation_zone="#{{ mauve.hex }}33"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}00"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+        <space_list>
+          <ThemeSpaceListGeneric
+            list="#{{ crust.hex }}"
+            list_title="#{{ text.hex }}"
+            list_text="#{{ text.hex }}"
+            list_text_hi="#{{ mauve.hex }}"
+            >
+          </ThemeSpaceListGeneric>
+        </space_list>
+      </ThemeNodeEditor>
+    </node_editor>
+    <outliner>
+      <ThemeOutliner
+        match="#{{ green.hex }}"
+        selected_highlight="#{{ surface1.hex }}"
+        active="#{{ mauve.hex }}"
+        selected_object="#{{ text.hex }}"
+        active_object="#{{ base.hex }}"
+        edited_object="#{{ green.hex }}66"
+        row_alternate="#ffffff04"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeOutliner>
+    </outliner>
+    <info>
+      <ThemeInfo
+        info_selected="#{{ lavender.hex }}"
+        info_selected_text="#{{ crust.hex }}"
+        info_error="#{{ maroon.hex }}ff"
+        info_error_text="#{{ crust.hex }}"
+        info_warning="#{{ yellow.hex }}ff"
+        info_warning_text="#{{ crust.hex }}"
+        info_info="#{{ blue.hex }}ff"
+        info_info_text="#{{ crust.hex }}"
+        info_debug="#{{ mauve.hex }}ff"
+        info_debug_text="#{{ crust.hex }}"
+        info_property="#{{ green.hex }}ff"
+        info_property_text="#{{ crust.hex }}"
+        info_operator="#{{ teal.hex }}ff"
+        info_operator_text="#{{ crust.hex }}"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeInfo>
+    </info>
+    <preferences>
+      <ThemePreferences>
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemePreferences>
+    </preferences>
+    <console>
+      <ThemeConsole
+        line_output="#{{ lavender.hex }}"
+        line_input="#{{ text.hex }}"
+        line_info="#{{ green.hex }}"
+        line_error="#{{ maroon.hex }}"
+        cursor="#{{ mauve.hex }}"
+        select="#{{ surface1.hex }}ff"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeConsole>
+    </console>
+    <clip_editor>
+      <ThemeClipEditor
+        grid="#{{ text.hex }}ff"
+        marker_outline="#000000"
+        marker="#808000"
+        active_marker="#ffffff"
+        selected_marker="#ffff00"
+        disabled_marker="#7f0000"
+        locked_marker="#7f7f7f"
+        path_before="#ff0000"
+        path_after="#0000ff"
+        path_keyframe_before="#ffc4c4"
+        path_keyframe_after="#c4c4ff"
+        frame_current="#4772b3"
+        time_scrub_background="#181818ff"
+        time_marker_line="#ffffff4d"
+        time_marker_line_selected="#ffffffb3"
+        strips="#ffffff"
+        strips_selected="#{{ mauve.hex }}"
+        metadatabg="#000000"
+        metadatatext="#ffffff"
+        handle_free="#000000"
+        handle_auto="#909000"
+        handle_align="#803060"
+        handle_sel_free="#000000"
+        handle_sel_auto="#f0ff40"
+        handle_sel_align="#f090a0"
+        handle_auto_clamped="#994030"
+        handle_sel_auto_clamped="#f0af90"
+        handle_vertex="#000000"
+        handle_vertex_select="#{{ mauve.hex }}"
+        handle_vertex_size="5"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#8185bb00"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+        <space_list>
+          <ThemeSpaceListGeneric
+            list="#{{ crust.hex }}"
+            list_title="#{{ text.hex }}"
+            list_text="#{{ text.hex }}"
+            list_text_hi="#{{ mauve.hex }}"
+            >
+          </ThemeSpaceListGeneric>
+        </space_list>
+      </ThemeClipEditor>
+    </clip_editor>
+    <topbar>
+      <ThemeTopBar>
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ crust.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface1.hex }}ff"
+                back="#{{ surface1.hex }}ff"
+                sub_back="#{{ surface1.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeTopBar>
+    </topbar>
+    <statusbar>
+      <ThemeStatusBar>
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface1.hex }}ff"
+                back="#{{ surface1.hex }}ff"
+                sub_back="#{{ surface1.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+      </ThemeStatusBar>
+    </statusbar>
+    <spreadsheet>
+      <ThemeSpreadsheet
+        row_alternate="#{{ surface0.hex }}ff"
+        >
+        <space>
+          <ThemeSpaceGeneric
+            back="#{{ base.hex }}"
+            title="#{{ text.hex }}"
+            text="#{{ text.hex }}"
+            text_hi="#{{ text.hex }}"
+            header="#{{ base.hex }}ff"
+            header_text="#{{ text.hex }}"
+            header_text_hi="#{{ text.hex }}"
+            button="#{{ base.hex }}ff"
+            button_title="#{{ text.hex }}"
+            button_text="#{{ text.hex }}"
+            button_text_hi="#{{ text.hex }}"
+            navigation_bar="#{{ base.hex }}ff"
+            execution_buts="#{{ base.hex }}ff"
+            tab_active="#{{ overlay0.hex }}"
+            tab_inactive="#{{ surface1.hex }}"
+            tab_back="#{{ base.hex }}ff"
+            tab_outline="#{{ base.hex }}"
+            >
+            <panelcolors>
+              <ThemePanelColors
+                header="#{{ surface0.hex }}ff"
+                back="#{{ surface0.hex }}ff"
+                sub_back="#{{ surface0.hex }}ff"
+                >
+              </ThemePanelColors>
+            </panelcolors>
+          </ThemeSpaceGeneric>
+        </space>
+        <space_list>
+          <ThemeSpaceListGeneric
+            list="#{{ crust.hex }}"
+            list_title="#{{ text.hex }}"
+            list_text="#{{ text.hex }}"
+            list_text_hi="#{{ mauve.hex }}"
+            >
+          </ThemeSpaceListGeneric>
+        </space_list>
+      </ThemeSpreadsheet>
+    </spreadsheet>
+    <bone_color_sets>
+      <ThemeBoneColorSet
+        normal="#9a0000"
+        select="#bd1111"
+        active="#f70a0a"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#f74018"
+        select="#f66913"
+        active="#fa9900"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#1e9109"
+        select="#59b70b"
+        active="#83ef1d"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#0a3694"
+        select="#3667df"
+        active="#5ec1ef"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#a9294e"
+        select="#c1416a"
+        active="#f05d91"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#430c78"
+        select="#543aa3"
+        active="#8764d5"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#24785a"
+        select="#3c9579"
+        active="#6fb6ab"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#4b707c"
+        select="#6a8691"
+        active="#9bc2cd"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#f4c90c"
+        select="#eec236"
+        active="#f3ff00"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#1e2024"
+        select="#484c56"
+        active="#ffffff"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#6f2f6a"
+        select="#9845be"
+        active="#d330d6"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#6c8e22"
+        select="#7fb022"
+        active="#bbef5b"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#8d8d8d"
+        select="#b0b0b0"
+        active="#dedede"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#834326"
+        select="#8b5811"
+        active="#bd6a11"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#08310e"
+        select="#1c430b"
+        active="#34622b"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#000000"
+        select="#000000"
+        active="#000000"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#000000"
+        select="#000000"
+        active="#000000"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#000000"
+        select="#000000"
+        active="#000000"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#000000"
+        select="#000000"
+        active="#000000"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+      <ThemeBoneColorSet
+        normal="#000000"
+        select="#000000"
+        active="#000000"
+        show_colored_constraints="FALSE"
+        >
+      </ThemeBoneColorSet>
+    </bone_color_sets>
+    <collection_color>
+      <ThemeCollectionColor
+        color="#{{ red.hex }}"
+        >
+      </ThemeCollectionColor>
+      <ThemeCollectionColor
+        color="#{{ peach.hex }}"
+        >
+      </ThemeCollectionColor>
+      <ThemeCollectionColor
+        color="#{{ yellow.hex }}"
+        >
+      </ThemeCollectionColor>
+      <ThemeCollectionColor
+        color="#{{ green.hex }}"
+        >
+      </ThemeCollectionColor>
+      <ThemeCollectionColor
+        color="#{{ sky.hex }}"
+        >
+      </ThemeCollectionColor>
+      <ThemeCollectionColor
+        color="#{{ mauve.hex }}"
+        >
+      </ThemeCollectionColor>
+      <ThemeCollectionColor
+        color="#{{ pink.hex }}"
+        >
+      </ThemeCollectionColor>
+      <ThemeCollectionColor
+        color="#{{ rosewater.hex }}"
+        >
+      </ThemeCollectionColor>
+    </collection_color>
+    <strip_color>
+      <ThemeStripColor
+        color="#{{ red.hex }}"
+        >
+      </ThemeStripColor>
+      <ThemeStripColor
+        color="#{{ peach.hex }}"
+        >
+      </ThemeStripColor>
+      <ThemeStripColor
+        color="#{{ yellow.hex }}"
+        >
+      </ThemeStripColor>
+      <ThemeStripColor
+        color="#{{ green.hex }}"
+        >
+      </ThemeStripColor>
+      <ThemeStripColor
+        color="#{{ sky.hex }}"
+        >
+      </ThemeStripColor>
+      <ThemeStripColor
+        color="#{{ mauve.hex }}"
+        >
+      </ThemeStripColor>
+      <ThemeStripColor
+        color="#{{ pink.hex }}"
+        >
+      </ThemeStripColor>
+      <ThemeStripColor
+        color="#{{ rosewater.hex }}"
+        >
+      </ThemeStripColor>
+      <ThemeStripColor
+        color="#{{ overlay0.hex }}"
+        >
+      </ThemeStripColor>
+    </strip_color>
+  </Theme>
+  <ThemeStyle>
+    <panel_title>
+      <ThemeFontStyle
+        points="11"
+        shadow="3"
+        shadow_offset_x="0"
+        shadow_offset_y="-1"
+        shadow_alpha="0.5"
+        shadow_value="0"
+        >
+      </ThemeFontStyle>
+    </panel_title>
+    <widget_label>
+      <ThemeFontStyle
+        points="11"
+        shadow="3"
+        shadow_offset_x="0"
+        shadow_offset_y="-1"
+        shadow_alpha="0.5"
+        shadow_value="0"
+        >
+      </ThemeFontStyle>
+    </widget_label>
+    <widget>
+      <ThemeFontStyle
+        points="11"
+        shadow="1"
+        shadow_offset_x="0"
+        shadow_offset_y="-1"
+        shadow_alpha="0.5"
+        shadow_value="0"
+        >
+      </ThemeFontStyle>
+    </widget>
+  </ThemeStyle>
+</bpy>
