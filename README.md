@@ -27,7 +27,7 @@
 ## 💝 Thanks to
 
 - [wintervoid](https://github.com/wintervoid)
-- [Names](https://github.com/NamesCode)
+- [Name](https://github.com/NamesCode)
 &nbsp;
 
 <p align="center">
