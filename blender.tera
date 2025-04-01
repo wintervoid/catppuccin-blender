@@ -2,9 +2,11 @@
 whiskers:
     version: "2.5.1"
     matrix:
-    - flavor
-    filename: "themes/catppuccin_{{ flavor.identifier }}.xml"
+        - flavor
+        - accent
+    filename: "themes/catppuccin-{{flavor.identifier}}-{{accent}}.xml"
 ---
+{%- set accent = flavor.colors[accent] %}
 <bpy>
   <Theme>
     <user_interface>
@@ -14,8 +16,9 @@ whiskers:
         icon_alpha="1"
         icon_saturation="1"
         widget_emboss="#00000000"
+        editor_border="#{{ surface2.hex }}"
         editor_outline="#{{ crust.hex }}"
-        widget_text_cursor="#{{ mauve.hex }}"
+        widget_text_cursor="#{{ accent.hex }}"
         panel_roundness="0.8"
         transparent_checker_primary="#{{ surface0.hex }}"
         transparent_checker_secondary="#{{ surface1.hex }}"
@@ -42,7 +45,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
@@ -57,7 +60,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
@@ -72,7 +75,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
@@ -87,7 +90,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
@@ -103,7 +106,7 @@ whiskers:
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
             inner_sel="#{{ surface1.hex }}ff"
-            item="#{{ mauve.hex }}ff"
+            item="#{{ accent.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ text.hex }}"
             show_shaded="FALSE"
@@ -117,7 +120,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ base.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ text.hex }}"
@@ -132,7 +135,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
@@ -148,7 +151,7 @@ whiskers:
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
             inner_sel="#{{ surface0.hex }}ff"
-            item="#{{ mauve.hex }}ff"
+            item="#{{ accent.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
             show_shaded="FALSE"
@@ -163,7 +166,7 @@ whiskers:
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
             inner_sel="#{{ surface1.hex }}ff"
-            item="#{{ mauve.hex }}ff"
+            item="#{{ accent.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ text.hex }}"
             show_shaded="FALSE"
@@ -177,7 +180,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ overlay2.hex }}"
             inner="#{{ surface0.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ text.hex }}"
@@ -192,7 +195,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
@@ -207,7 +210,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
@@ -222,7 +225,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ overlay2.hex }}"
             inner="#{{ surface0.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ text.hex }}"
@@ -237,7 +240,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#65527bff"
             text="#{{ text.hex }}"
             text_sel="#{{ base.hex }}"
@@ -252,7 +255,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ text.hex }}"
             inner="#{{ text.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ base.hex }}ff"
             text="#{{ base.hex }}"
             text_sel="#{{ base.hex }}"
@@ -267,10 +270,10 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface0.hex }}"
             inner="#{{ surface0.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ text.hex }}ff"
             text="#{{ text.hex }}"
-            text_sel="#{{ base.hex }}"
+            text_sel="#{{ accent.hex }}"
             show_shaded="FALSE"
             shadetop="0"
             shadedown="0"
@@ -297,8 +300,8 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
-            item="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
+            item="#{{ accent.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ text.hex }}"
             show_shaded="FALSE"
@@ -313,7 +316,7 @@ whiskers:
             outline="#{{ surface0.hex }}"
             inner="#{{ surface0.hex }}ff"
             inner_sel="#{{ crust.hex }}ff"
-            item="#{{ mauve.hex }}ff"
+            item="#{{ accent.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ text.hex }}"
             show_shaded="FALSE"
@@ -327,7 +330,7 @@ whiskers:
           <ThemeWidgetColors
             outline="#{{ surface1.hex }}"
             inner="#{{ surface1.hex }}ff"
-            inner_sel="#{{ mauve.hex }}ff"
+            inner_sel="#{{ accent.hex }}ff"
             item="#{{ surface2.hex }}ff"
             text="#{{ text.hex }}"
             text_sel="#{{ text.hex }}"
@@ -379,23 +382,23 @@ whiskers:
         wire_edit="#000000"
         edge_width="1"
         gp_vertex="#b7b7ff"
-        gp_vertex_select="#{{ mauve.hex }}"
+        gp_vertex_select="#{{ accent.hex }}"
         gp_vertex_size="3"
         text_grease_pencil="#b5e61d"
         object_selected="#65527b"
-        object_active="#{{ mauve.hex }}"
+        object_active="#{{ accent.hex }}"
         text_keyframe="#ddd700"
         camera="#{{ text.hex }}"
         empty="#{{ text.hex }}"
         light="#{{ text.hex }}50"
         speaker="#{{ text.hex }}"
         vertex="#{{ text.hex }}"
-        vertex_select="#{{ mauve.hex }}"
+        vertex_select="#{{ accent.hex }}"
         vertex_active="#000000"
         vertex_size="3"
         vertex_bevel="#00a5ff"
         vertex_unreferenced="#000000"
-        edge_select="#{{ mauve.hex }}"
+        edge_select="#{{ accent.hex }}"
         edge_seam="#db2512"
         edge_sharp="#00ffff"
         edge_crease="#cc0099"
@@ -403,8 +406,8 @@ whiskers:
         edge_facesel="#4b4b4b"
         freestyle_edge_mark="#7fff7f"
         face="#ffffff02"
-        face_select="#{{ mauve.hex }}2e"
-        face_dot="#{{ mauve.hex }}"
+        face_select="#{{ accent.hex }}2e"
+        face_dot="#{{ accent.hex }}"
         facedot_size="3"
         freestyle_face_mark="#7fff7f4d"
         face_retopology="#50c8ff0f"
@@ -493,7 +496,7 @@ whiskers:
         frame_current="#{{ blue.hex }}"
         time_scrub_background="#{{ crust.hex }}ff"
         time_marker_line="#{{ text.hex }}ff"
-        time_marker_line_selected="#{{ mauve.hex }}ff"
+        time_marker_line_selected="#{{ accent.hex }}ff"
         window_sliders="#969696"
         channels_region="#{{ surface1.hex }}"
         dopesheet_channel="#{{ surface1.hex }}"
@@ -503,7 +506,7 @@ whiskers:
         preview_range="#a14d0066"
         vertex="#ffffff"
         vertex_select="#65527b"
-        vertex_active="#{{ mauve.hex }}"
+        vertex_active="#{{ accent.hex }}"
         vertex_size="6"
         vertex_bevel="#ffffff"
         vertex_unreferenced="#ffffff"
@@ -519,7 +522,7 @@ whiskers:
         handle_sel_auto_clamped="#f0af90"
         lastsel_point="#ffffff"
         handle_vertex="#ffffff"
-        handle_vertex_select="#{{ mauve.hex }}"
+        handle_vertex_select="#{{ accent.hex }}"
         handle_vertex_size="5"
         >
         <space>
@@ -557,7 +560,7 @@ whiskers:
             list="#{{ base.hex }}"
             list_title="#{{ text.hex }}"
             list_text="#{{ text.hex }}"
-            list_text_hi="#{{ mauve.hex }}"
+            list_text_hi="#{{ accent.hex }}"
             >
           </ThemeSpaceListGeneric>
         </space_list>
@@ -565,7 +568,7 @@ whiskers:
     </graph_editor>
     <file_browser>
       <ThemeFileBrowser
-        selected_file="#{{ mauve.hex }}"
+        selected_file="#{{ accent.hex }}"
         row_alternate="#{{ surface0.hex }}45"
         >
         <space>
@@ -610,7 +613,7 @@ whiskers:
         active_action_unset="#{{ surface1.hex }}4d"
         preview_range="#a14d0066"
         strips="#0d0d0d"
-        strips_selected="#{{ mauve.hex }}"
+        strips_selected="#{{ accent.hex }}"
         transition_strips="#1c2630"
         transition_strips_selected="#2e75db"
         meta_strips="#332642"
@@ -661,7 +664,7 @@ whiskers:
             list="#{{ crust.hex }}"
             list_title="#{{ text.hex }}"
             list_text="#{{ text.hex }}"
-            list_text_hi="#{{ mauve.hex }}"
+            list_text_hi="#{{ accent.hex }}"
             >
           </ThemeSpaceListGeneric>
         </space_list>
@@ -673,7 +676,7 @@ whiskers:
         frame_current="#{{ blue.hex }}"
         time_scrub_background="#{{ crust.hex }}ff"
         time_marker_line="#{{ text.hex }}ff"
-        time_marker_line_selected="#{{ mauve.hex }}ff"
+        time_marker_line_selected="#{{ accent.hex }}ff"
         value_sliders="#000000"
         view_sliders="#c0c0c0"
         dopesheet_channel="#{{ surface1.hex }}66"
@@ -683,9 +686,9 @@ whiskers:
         channel_group="#{{ surface1.hex }}66"
         active_channels_group="#{{ surface1.hex }}67"
         long_key="#ffffff1f"
-        long_key_selected="#{{ mauve.hex }}99"
+        long_key_selected="#{{ accent.hex }}99"
         keyframe="#bfbfbf"
-        keyframe_selected="#{{ mauve.hex }}"
+        keyframe_selected="#{{ accent.hex }}"
         keyframe_extreme="#e8b3cc"
         keyframe_extreme_selected="#f28080"
         keyframe_breakdown="#b3dbe8"
@@ -693,14 +696,14 @@ whiskers:
         keyframe_jitter="#94e575"
         keyframe_jitter_selected="#61c042"
         keyframe_movehold="#808080"
-        keyframe_movehold_selected="#{{ mauve.hex }}"
+        keyframe_movehold_selected="#{{ accent.hex }}"
         keyframe_border="#000000ff"
         keyframe_border_selected="#000000ff"
         keyframe_scale_factor="1"
         summary="#4d272766"
         preview_range="#a14d0066"
         interpolation_line="#94e575cc"
-        simulated_frames="#{{ mauve.hex }}ff"
+        simulated_frames="#{{ accent.hex }}ff"
         >
         <space>
           <ThemeSpaceGeneric
@@ -737,7 +740,7 @@ whiskers:
             list="#{{ crust.hex }}"
             list_title="#{{ text.hex }}"
             list_text="#{{ text.hex }}"
-            list_text_hi="#{{ mauve.hex }}"
+            list_text_hi="#{{ accent.hex }}"
             >
           </ThemeSpaceListGeneric>
         </space_list>
@@ -747,14 +750,14 @@ whiskers:
       <ThemeImageEditor
         grid="#{{ surface1.hex }}ff"
         vertex="#ffffff"
-        vertex_select="#{{ mauve.hex }}"
+        vertex_select="#{{ accent.hex }}"
         vertex_active="#000000"
         vertex_size="3"
         vertex_bevel="#000000"
         vertex_unreferenced="#000000"
         face="#ffffff0a"
-        face_select="#{{ mauve.hex }}3c"
-        face_dot="#{{ mauve.hex }}"
+        face_select="#{{ accent.hex }}3c"
+        face_dot="#{{ accent.hex }}"
         facedot_size="3"
         freestyle_face_mark="#7fff7f33"
         face_retopology="#00000000"
@@ -763,7 +766,7 @@ whiskers:
         editmesh_active="#ffffff40"
         wire_edit="#ffffff"
         edge_width="1"
-        edge_select="#{{ mauve.hex }}"
+        edge_select="#{{ accent.hex }}"
         scope_back="#727272ff"
         preview_stitch_face="#7f7f0033"
         preview_stitch_edge="#ff00ff33"
@@ -835,13 +838,13 @@ whiskers:
         meta_strip="#65527b"
         mask_strip="#{{ flamingo.hex }}"
         text_strip="#{{ text.hex }}"
-        active_strip="#{{ mauve.hex }}"
+        active_strip="#{{ accent.hex }}"
         selected_strip="#65527b"
         frame_current="#{{ blue.hex }}"
         time_scrub_background="#{{ crust.hex }}ff"
         time_marker_line="#{{ text.hex }}ff"
-        time_marker_line_selected="#{{ mauve.hex }}ff"
-        keyframe="#{{ mauve.hex }}"
+        time_marker_line_selected="#{{ accent.hex }}ff"
+        keyframe="#{{ accent.hex }}"
         draw_action="#50c8ff"
         preview_back="#000000"
         metadatabg="#000000"
@@ -884,7 +887,7 @@ whiskers:
             list="#{{ crust.hex }}"
             list_title="#{{ text.hex }}"
             list_text="#{{ text.hex }}"
-            list_text_hi="#{{ mauve.hex }}"
+            list_text_hi="#{{ accent.hex }}"
             >
           </ThemeSpaceListGeneric>
         </space_list>
@@ -892,8 +895,8 @@ whiskers:
     </sequence_editor>
     <properties>
       <ThemeProperties
-        match="#{{ mauve.hex }}"
-        active_modifier="#{{ mauve.hex }}ff"
+        match="#{{ accent.hex }}"
+        active_modifier="#{{ accent.hex }}ff"
         >
         <space>
           <ThemeSpaceGeneric
@@ -936,7 +939,7 @@ whiskers:
         syntax_builtin="#{{ red.hex }}"
         syntax_symbols="#{{ flamingo.hex }}"
         syntax_special="#{{ green.hex }}"
-        syntax_preprocessor="#{{ mauve.hex }}"
+        syntax_preprocessor="#{{ accent.hex }}"
         syntax_reserved="#{{ peach.hex }}"
         syntax_comment="#{{ overlay1.hex }}"
         syntax_string="#{{ yellow.hex }}"
@@ -978,10 +981,10 @@ whiskers:
       <ThemeNodeEditor
         grid="#{{ overlay1.hex }}"
         node_selected="#65527b"
-        node_active="#{{ mauve.hex }}"
+        node_active="#{{ accent.hex }}"
         wire="#{{ text.hex }}ff"
         wire_inner="#8d8d8d"
-        wire_select="#{{ mauve.hex }}80"
+        wire_select="#{{ accent.hex }}80"
         selected_text="#{{ text.hex }}"
         node_backdrop="#{{ surface0.hex }}ff"
         converter_node="#{{ lavender.hex }}"
@@ -996,7 +999,7 @@ whiskers:
         dash_alpha="0.5"
         input_node="#{{ maroon.hex }}"
         output_node="#{{ red.hex }}"
-        filter_node="#{{ mauve.hex }}"
+        filter_node="#{{ accent.hex }}"
         vector_node="#{{ blue.hex }}"
         texture_node="#{{ peach.hex }}"
         shader_node="#{{ green.hex }}"
@@ -1005,7 +1008,7 @@ whiskers:
         layout_node="#6c696f"
         geometry_node="#{{ green.hex }}"
         attribute_node="#{{ blue.hex }}"
-        simulation_zone="#{{ mauve.hex }}33"
+        simulation_zone="#{{ accent.hex }}33"
         >
         <space>
           <ThemeSpaceGeneric
@@ -1042,7 +1045,7 @@ whiskers:
             list="#{{ crust.hex }}"
             list_title="#{{ text.hex }}"
             list_text="#{{ text.hex }}"
-            list_text_hi="#{{ mauve.hex }}"
+            list_text_hi="#{{ accent.hex }}"
             >
           </ThemeSpaceListGeneric>
         </space_list>
@@ -1052,7 +1055,7 @@ whiskers:
       <ThemeOutliner
         match="#{{ green.hex }}"
         selected_highlight="#{{ surface1.hex }}"
-        active="#{{ mauve.hex }}"
+        active="#{{ accent.hex }}"
         selected_object="#{{ text.hex }}"
         active_object="#{{ base.hex }}"
         edited_object="#{{ green.hex }}66"
@@ -1100,7 +1103,7 @@ whiskers:
         info_warning_text="#{{ crust.hex }}"
         info_info="#{{ blue.hex }}ff"
         info_info_text="#{{ crust.hex }}"
-        info_debug="#{{ mauve.hex }}ff"
+        info_debug="#{{ accent.hex }}ff"
         info_debug_text="#{{ crust.hex }}"
         info_property="#{{ green.hex }}ff"
         info_property_text="#{{ crust.hex }}"
@@ -1179,7 +1182,7 @@ whiskers:
         line_input="#{{ text.hex }}"
         line_info="#{{ green.hex }}"
         line_error="#{{ maroon.hex }}"
-        cursor="#{{ mauve.hex }}"
+        cursor="#{{ accent.hex }}"
         select="#{{ surface1.hex }}ff"
         >
         <space>
@@ -1232,7 +1235,7 @@ whiskers:
         time_marker_line="#ffffff4d"
         time_marker_line_selected="#ffffffb3"
         strips="#ffffff"
-        strips_selected="#{{ mauve.hex }}"
+        strips_selected="#{{ accent.hex }}"
         metadatabg="#000000"
         metadatatext="#ffffff"
         handle_free="#000000"
@@ -1244,7 +1247,7 @@ whiskers:
         handle_auto_clamped="#994030"
         handle_sel_auto_clamped="#f0af90"
         handle_vertex="#000000"
-        handle_vertex_select="#{{ mauve.hex }}"
+        handle_vertex_select="#{{ accent.hex }}"
         handle_vertex_size="5"
         >
         <space>
@@ -1282,7 +1285,7 @@ whiskers:
             list="#{{ crust.hex }}"
             list_title="#{{ text.hex }}"
             list_text="#{{ text.hex }}"
-            list_text_hi="#{{ mauve.hex }}"
+            list_text_hi="#{{ accent.hex }}"
             >
           </ThemeSpaceListGeneric>
         </space_list>
@@ -1395,7 +1398,7 @@ whiskers:
             list="#{{ crust.hex }}"
             list_title="#{{ text.hex }}"
             list_text="#{{ text.hex }}"
-            list_text_hi="#{{ mauve.hex }}"
+            list_text_hi="#{{ accent.hex }}"
             >
           </ThemeSpaceListGeneric>
         </space_list>
@@ -1565,7 +1568,7 @@ whiskers:
         >
       </ThemeCollectionColor>
       <ThemeCollectionColor
-        color="#{{ mauve.hex }}"
+        color="#{{ accent.hex }}"
         >
       </ThemeCollectionColor>
       <ThemeCollectionColor
@@ -1599,7 +1602,7 @@ whiskers:
         >
       </ThemeStripColor>
       <ThemeStripColor
-        color="#{{ mauve.hex }}"
+        color="#{{ accent.hex }}"
         >
       </ThemeStripColor>
       <ThemeStripColor
