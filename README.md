@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for Blender <a href="https://github.com/catppuccin/template">App</a>
+	Catppuccin for Blender <a href="https://github.com/blender/blender">App</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -19,14 +19,10 @@
 ## Usage
 
 1. Download the flavor of your choice.
-2. Open the app and go to **Preferences** > **Appearance** > **Import theme**.
+2. Open the app and go to **Edit** > **Preferences** > **Theme** > **Import theme**.
 3. Select the downloaded flavor file.
 
-<!-- The FAQ section is optional. Remove if needed.-->
-## 🙋 FAQ
 
-- Q: **_"How can I do X?"_**\
-  A: ...
 
 ## 💝 Thanks to
 
